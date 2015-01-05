@@ -54,7 +54,7 @@ var randomColor = Math.floor(Math.random()*16777215).toString(16);
 		$(".square").remove();
 		$(".container").remove();
 		size = prompt("How many squares on a side? Between 3 and 100", "30");
-		while(size < 5 || size > 100){
+		if(size < 5 || size > 100){
 			size = prompt("How many squares on a side? Between 3 and 100", "30")
 		makeGrid();
 
